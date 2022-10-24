@@ -5,24 +5,26 @@ function TodoItem(props) {
     let [checked, isChecked] = useState(!!props.item.checked);
 
     return (
-        <div className="todo-item">
+        <div className="todo-item" style={props.style}>
             <div className="todo-item__checkbox">
                 <input
                     onChange={() => isChecked(!checked)}
-                    type={'checkbox'} checked={checked}/>
+                    defaultChecked={checked}
+                    type={'checkbox'}/>
             </div>
             <div className="todo-item__text">
                 <input
                     type={'text'} 
                     style={checked ? {textDecoration: 'line-through'} : {}}
-                    value={'Text'}
-                    disabled={true}/>
+                    value={props.item.text}
+                    disabled={true}
+                    readOnly={true}/>
             </div>
             <div className="todo-item__actions">
                 <button onClick={() => props.handleClickRemove(props.item.id)}>X</button>
                 <input
                     type={'text'}
-                    value={new Date().toString().slice(0, 10)}/>
+                    defaultValue={new Date().toString().slice(0, 10)}/>
             </div>
         </div>)
 }

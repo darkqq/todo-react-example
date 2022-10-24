@@ -7,6 +7,7 @@
     border: 1px solid black;
     height: 150px;
     width: 450px;
+    margin: 5px 0;
 }
 
 .todo-item__checkbox {
@@ -45,6 +46,6 @@
     width: 100%;
 }
 
-.todo-item__actions button{
+.todo-item__actions button {
     padding: 3px 8px;
 }
