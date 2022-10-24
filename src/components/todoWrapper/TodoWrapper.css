@@ -1,0 +1,28 @@
+.todo-wrapper { 
+    padding: 20px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title__delete-btn button, .title__add-btn button {
+    height: 30px;
+    width: 90px;
+}
+
+.title .title__text input {
+    width: 300px;
+    height: 30px;
+}

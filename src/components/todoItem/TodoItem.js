@@ -13,7 +13,8 @@ function TodoItem(props) {
             </div>
             <div className="todo-item__text">
                 <input
-                    type={'text'} style={checked ? {textDecoration: 'line-through'} : {}}
+                    type={'text'} 
+                    style={checked ? {textDecoration: 'line-through'} : {}}
                     value={'Text'}
                     disabled={true}/>
             </div>
